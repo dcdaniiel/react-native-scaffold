@@ -3,5 +3,5 @@
 ## Usage
 
 ```bash
-    npx react-native init AwesomeExample --template react-native-scaffold
+    npx react-native init Base --template react-native-scaffold
 ```
