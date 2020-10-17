@@ -1,0 +1,69 @@
+{
+  "strict": {
+    "text-font-family": "Open Sans",
+    "text-label-font-size": 12,
+    "text-label-font-weight": "bold",
+    "text-heading-1-font-weight": "bold",
+    "text-heading-2-font-weight": "bold",
+    "text-heading-3-font-weight": "bold",
+    "text-heading-4-font-weight": "bold",
+    "text-heading-5-font-weight": "bold",
+    "text-heading-6-font-weight": "bold"
+  },
+  "components": {
+    "Input": {
+      "appearances": {
+        "default": {
+          "mapping": {
+            "paddingHorizontal": 16,
+            "paddingVertical": 12,
+            "labelMarginBottom": 8
+          },
+          "variantGroups": {
+            "status": {
+              "basic": {
+                "backgroundColor": "$color-basic-100",
+                "borderColor": "$color-basic-500",
+                "labelColor": "$color-basic-600",
+                "iconTintColor": "$color-basic-600"
+              }
+            }
+          }
+        }
+      }
+    },
+    "Text": {
+      "meta": {
+        "parameters": {
+          "lineHeight": {
+            "type": "number"
+          }
+        },
+        "variantGroups": {
+          "category": {
+            "button-large": {
+              "default": false
+            }
+          }
+        }
+      },
+      "appearances": {
+        "default": {
+          "mapping": {
+            "fontSize": 20
+          },
+          "variantGroups": {
+            "category": {
+              "button-large": {
+                "lineHeight": 20,
+                "color": "color-basic-600",
+                "fontSize": 16,
+                "fontWeight": "bold"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
