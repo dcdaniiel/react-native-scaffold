@@ -1,6 +1,6 @@
-import React from 'react';
-import { Text } from '@ui-kitten/components';
+import React from "react";
+import { Text } from "@ui-kitten/components";
 
 export const Home = ({ navigation, state }) => {
-  return <Text>HOME</Text>;
+  return <Text status={"primary"}>HOME</Text>;
 };

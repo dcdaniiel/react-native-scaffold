@@ -1,5 +1,5 @@
-const light = require('./light');
-const dark = require('./dark');
+import { light } from './light';
+import { dark } from './dark';
 
 export const theme = {
   light: light,
