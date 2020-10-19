@@ -1,17 +1,16 @@
-import ENV from '../../config/env';
+import { baseURL } from '../../config/env';
 import axios from 'axios';
-
-console.log('API', ENV);
+import { getToken } from './auth';
 
 const api = axios.create({
-  baseURL: ENV.URL_API,
+  baseURL,
 });
 
 api.interceptors.request.use(async (config) => {
-  // const token = await getToken();
-  // if (token && !config.headers.Authorization) {
-  //   config.headers.Authorization = `Bearer ${token}`;
-  // }
+  const token = await getToken();
+  if (token && !config.headers.Authorization) {
+    config.headers.Authorization = `Bearer ${token}`;
+  }
   return config;
 });
 
