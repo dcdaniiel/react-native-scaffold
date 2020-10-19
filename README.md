@@ -15,12 +15,12 @@
 
 > 1: Open this file in your project:
 ```
-    android/app/src/debug/java/com/"NAME_PROJECT"/ReactNativeFlipper
+    android/app/src/debug/java/com/"PROJECT_NAME"/ReactNativeFlipper
 ```
 > 2: Change line number 14 and 34
 ```
-14 ->  import com.facebook.flipper.plugins.dataNAME_PROJECT.DataNAME_PROJECTFlipperPlugin
-34 ->  client.addPlugin(new DataNAME_PROJECTsFlipperPlugin(context));
+14 ->  import com.facebook.flipper.plugins.dataPROJECT_NAME.DataPROJECT_NAMEFlipperPlugin
+34 ->  client.addPlugin(new DataPROJECT_NAMEsFlipperPlugin(context));
 ```
 > 3: To
 ```

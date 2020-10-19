@@ -4,8 +4,6 @@
   "private": true,
   "scripts": {
     "android": "react-native run-android",
-    "env:dev": "node config/env/set-environment.js development",
-    "env:prod": "node config/env/set-environment.js production",
     "ios": "react-native run-ios",
     "start": "react-native start",
     "test": "jest",
@@ -23,6 +21,7 @@
     "axios": "^0.20.0",
     "react": "16.13.1",
     "react-native": "0.63.3",
+    "react-native-dotenv": "0.2.0",
     "react-native-gesture-handler": "^1.8.0",
     "react-native-safe-area-context": "^3.1.8",
     "react-native-screens": "^2.11.0",

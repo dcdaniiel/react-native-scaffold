@@ -1,8 +1,8 @@
-import { baseURL } from '../../config/env';
 import axios from 'axios';
 import { clearToken, getToken } from './auth';
+import { API_URL } from 'react-native-dotenv';
 
-const api = axios.create({ baseURL });
+const api = axios.create({ baseURL: API_URL });
 
 api.interceptors.request.use(async (config) => {
   const token = await getToken();
