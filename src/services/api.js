@@ -1,10 +1,8 @@
 import { baseURL } from '../../config/env';
 import axios from 'axios';
-import { getToken } from './auth';
+import { clearToken, getToken } from './auth';
 
-const api = axios.create({
-  baseURL,
-});
+const api = axios.create({ baseURL });
 
 api.interceptors.request.use(async (config) => {
   const token = await getToken();
@@ -18,10 +16,9 @@ api.interceptors.response.use(
   (response) => {
     return response;
   },
-  (error) => {
+  async (error) => {
     if (error.response.status === 401) {
-      // logout();
-      // userLogout();
+      await clearToken();
     }
     return Promise.reject(error);
   },
